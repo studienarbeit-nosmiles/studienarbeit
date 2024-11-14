@@ -66,3 +66,10 @@ Erkennung lächelnder und lachender Gesichter",
 // You can now start writing :)
 
 #include "content/introduction.typ"
+#include "content/foundations.typ"
+#include "content/research.typ"
+#include "content/methodology.typ"
+#include "content/modelImplementation.typ"
+#include "content/websiteImplementation.typ"
+#include "content/testing.typ"
+#include "content/conclusion.typ"
