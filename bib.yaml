@@ -1,0 +1,8 @@
+#CNN
+whatIsCNN:
+  type: web
+  title: 'Was ist ein Convolutional Neural Network?'
+  author: 'The MathWorks Inc.'
+  url: {
+    value: 'https://de.mathworks.com/discovery/convolutional-neural-network.html#:~:text=Ein%20Convolutional%20Neural%20Network%20(CNN,Klassen%20und%20Kategorien%20zu%20erkennen.', date: 2024-11-14
+  }

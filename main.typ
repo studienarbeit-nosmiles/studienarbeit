@@ -6,7 +6,7 @@
 #show: project.with(
     // 'de' for german or 'en' for english.
     // Pull Requests for other languages are welcome! :)
-    lang: "de",
+    lang: "en",
 
     // Shows a line for a signature, if set to `false`,
     is_digital: true,
@@ -51,7 +51,7 @@ Erkennung lächelnder und lachender Gesichter",
 
     // Path/s to references - either .yaml or .bib files
     // * for `.yaml` files see: [hayagriva](https://github.com/typst/hayagriva)
-    library_paths: ("literature.bib"),
+    library_paths: ("bib.yaml"),
 
     // Specify acronyms here.
     // The first string is the acronym, the second is the singular form and the third is the plural form.
@@ -59,7 +59,10 @@ Erkennung lächelnder und lachender Gesichter",
     //
     // Important: If you don't specify the plural form, make sure to append a `,` after the singular form.
     // This makes sure Typst doesn't interpret the list as a string
-    acronyms: (),
+    acronyms: (
+      "NN": ("Neural Network", ),
+      "CNN": ("Convolutional Nerual Network", )
+    ),
 )
 
 
