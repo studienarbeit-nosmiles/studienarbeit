@@ -61,7 +61,9 @@ Erkennung lächelnder und lachender Gesichter",
     // This makes sure Typst doesn't interpret the list as a string
     acronyms: (
       "NN": ("Neural Network", ),
-      "CNN": ("Convolutional Nerual Network", )
+      "CNN": ("Convolutional Nerual Network", ),
+      "ML": ("Machine Learning", ),
+      "AI": ("Artificial Intelligence")
     ),
 )
 

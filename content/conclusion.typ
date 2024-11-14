@@ -1,3 +1,3 @@
-= Conclusion and Future Research Directions
+= Conclusion
 
 #pagebreak()

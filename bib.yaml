@@ -1,8 +1,68 @@
+#NeuralNetwork
+whatIsNN:
+  type: web
+  title: 'What is a neural network?'
+  author: 'The MathWorks Inc.'
+  url: {
+    value: 'https://de.mathworks.com/discovery/convolutional-neural-network.html#:~:text=Ein%20Convolutional%20Neural%20Network%20(CNN,Klassen%20und%20Kategorien%20zu%20erkennen.', date: 2024-11-14
+  }
+
 #CNN
 whatIsCNN:
   type: web
   title: 'Was ist ein Convolutional Neural Network?'
-  author: 'The MathWorks Inc.'
+  author: 'IBM'
   url: {
-    value: 'https://de.mathworks.com/discovery/convolutional-neural-network.html#:~:text=Ein%20Convolutional%20Neural%20Network%20(CNN,Klassen%20und%20Kategorien%20zu%20erkennen.', date: 2024-11-14
+    value: 'https://www.ibm.com/topics/neural-networks', date: 2024-11-14
+  }
+
+#Use Cases Facial Recognition
+useCasesFacial:
+  type: web
+  title: 'Was ist ein Convolutional Neural Network?'
+  author: 'Thales'
+  url: {
+    value: 'https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/inspired/where-facial-recognition-used', date: 2024-11-14
+  }
+
+useCasesFacial2:
+  type: web
+  title: 'Maschinelle Gesichsterkennung im öffentlichen Raum'
+  author: ['Braun Binder, Nadja', 'Kunz, Eliane', 'Obrecht, Liliane']
+  url: {
+    value: 'https://edoc.unibas.ch/88208/', date: 2024-11-14
+  }
+
+useCaseFacial3:
+  type: web
+  title: 'Facial Recognition History'
+  author: ['Campillo, Rafael']
+  url: {
+    value: 'https://www.mobbeel.com/en/blog/facial-recognition-history/#:~:text=The%20initial%20steps%20in%20facial,RAND%20tablets%20in%20the%201960s.', date: 2024-11-14
+  }
+
+#Use Cases Emotion Recognition
+useCaseEmotion:
+  type: web
+  title: 'Facial Recognition History'
+  author: ['Mekinec, Dan']
+  url: {
+    value: 'https://visagetechnologies.com/facial-emotion-recognition-guide/', date: 2024-11-14
+  }
+
+#Machine Learning
+machineLearning:
+  type: web
+  title: 'Machine learning vs. neural networks: What`s the difference?'
+  author: 'Bigelow, Stephen J.'
+  url: {
+    value: 'https://www.techtarget.com/searchenterpriseai/answer/Machine-learning-vs-neural-networks-Whats-the-difference', date: 2024-11-14
+  }
+
+machineLearningImage:
+  type: web
+  title: 'AI, Machine Learning and neural networks explained'
+  author: 'Van Otterloo, Sieuwert'
+  url: {
+    value: 'https://ictinstitute.nl/ai-machine-learning-and-neural-networks-explained/', date: 2024-11-14
   }
