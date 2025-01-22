@@ -1,80 +1,138 @@
-#import "template.typ": project, codefigure, hr, quote, note, weakbreak, caption_with_source
+#import "@preview/clean-dhbw:0.1.0": *
+#import "acronyms.typ": acronyms
+#import "glossary.typ": glossary
 
-/// import acrostiche in every file you plan to use acronyms
-#import "@preview/acrostiche:0.2.0": acr, acrpl
-
-#show: project.with(
-    // 'de' for german or 'en' for english.
-    // Pull Requests for other languages are welcome! :)
-    lang: "en",
-
-    // Shows a line for a signature, if set to `false`,
-    is_digital: true,
-
-    // Display the confidential clause
-    confidential_clause: false,
-
-    ///
-    /// Cover Sheet
-    ///
-    // Full title of your project
-    title_long: "Die Entwicklung eines mimikerkennenden Systems zur
-Erkennung lächelnder und lachender Gesichter",
-    // Shortened title, which is displayed in the header on every page
-    title_short: "???",
-    // The type of your project
-    type: "Studienarbeit 1 (T3_3101)",
-    // Other information about you and your project
-    firstname: "Jeremie Bents & Marvin Lindner",
-    //lastname: "",
-    signature_place: "Karlsruhe",
-    matriculation_number: "???",
-    course: "TINF21B2",
-    submission_date: "???",
-    processing_period: "11.10.2024 - ???",
-    // supervisor_company: "Christian Klein",
-    supervisor_university: "Dr. Roland Schätzle",
-
-    // Disable the abstract by changing to `abstract: ()`
-    // To load the abstract from a file use include("abstract.typ") instead of [...]`
-    // If you only want one language, leave the comma at the end -> `("de", "Deutsch", []),` its necessary for syntax of the template
-    abstract: (
-      ("de", "Deutsch", include("content/extra/abstract_de.typ")),
-      ("en", "English", include "content/extra/abstract_en.typ")
-    ),
-
-    // appendices: usage: ("Title", [content] || include("appendix.typ"))
-    // change to `appendices: none` to remove appendix
-    appendices: (
-      ("Abbildungen", include("content/extra/fig_appendix.typ")), // appendix from file
-    ),
-
-    // Path/s to references - either .yaml or .bib files
-    // * for `.yaml` files see: [hayagriva](https://github.com/typst/hayagriva)
-    library_paths: ("bib.yaml"),
-
-    // Specify acronyms here.
-    // The first string is the acronym, the second is the singular form and the third is the plural form.
-    // The plural form is optional, if not provided, the singular form `+ s` is used.
-    //
-    // Important: If you don't specify the plural form, make sure to append a `,` after the singular form.
-    // This makes sure Typst doesn't interpret the list as a string
-    acronyms: (
-      "NN": ("Neural Network", ),
-      "CNN": ("Convolutional Nerual Network", ),
-      "ML": ("Machine Learning", ),
-      "AI": ("Artificial Intelligence")
-    ),
+#show: clean-dhbw.with(
+  title: "Evaluation von Typst zur Erstellung einer Abschlussarbeit",
+  authors: (
+    (name: "Jeremie Bents", student-id: "1941564", course: "TINF22B2", course-of-studies: "Informatik", company: (
+      (name: "SAP SE", post-code: "69190", city: "Walldorf")
+    )),
+    (name: "Marvin Lindner", student-id: "kommt noch", course: "TINF22B2", course-of-studies: "Informatik", company: (
+      (name: "SAP SE", post-code: "69190", city: "Walldorf")
+    ))
+  ),
+  type-of-thesis: "Studienarbeit",
+  acronyms: acronyms, // displays the acronyms defined in the acronyms dictionary
+  at-university: false, // if true the company name on the title page and the confidentiality statement are hidden
+  bibliography: bibliography("bib.yaml"),
+  date: datetime.today(),
+  glossary: glossary, // displays the glossary terms defined in the glossary dictionary
+  language: "en", // en, de
+  supervisor: (company: "", university: "Dr. Roland Schätzle"),
+  university: "Duale Hochschule Baden-Württemberg",
+  university-location: "Karlsruhe",
+  university-short: "DHBW",
+  // for more options check the package documentation (https://typst.app/universe/package/clean-dhbw)
 )
 
-
-// You can now start writing :)
-
+// Edit this content to your liking
 #include "content/introduction.typ"
 #include "content/foundations.typ"
-#include "content/research.typ"
 #include "content/methodology.typ"
 #include "content/modelImplementation.typ"
 #include "content/websiteImplementation.typ"
 #include "content/testing.typ"
 #include "content/conclusion.typ"
+
+
+// = Erläuterungen
+
+// Im folgenden werden einige nützliche Elemente und Funktionen zum Erstellen von Typst-Dokumenten mit diesem Template erläutert.
+
+// == Abkürzungen
+
+// Verwende die `acr`-Funktion und deren Geschwister `acrpl`, `acrs` und `acrspl`, um Abkürzungen aus dem Abkürzungsverzeichnis einzufügen. Beispiele dafür sind: 
+
+// - #acr("HTTP") – `acr`: Singular mit Erläuterung
+// - #acrpl("API") – `acrpl`: Plural mit Erläuterung
+// - #acrs("REST") - `acrs`: Singular ohne Erläuterung
+// - #acrspl("API") – `acrspl`: Plural ohne Erläuterung
+
+// == Glossar
+
+// Verwende die `gls`-Funktion, um Ausdrücke aus dem Glossar einzufügen, die dann dorthin verlinkt werden. Ein Beispiel dafür ist: 
+
+// - Eine #gls("Softwareschnittstelle") ist ein logischer Berührungspunkt in einem Softwaresystem. Sie ermöglicht und regelt den Austausch von Kommandos und Daten zwischen verschiedenen Prozessen und Komponenten.
+
+// == Listen
+
+// Es gibt Aufzählungslisten oder nummerierte Listen:
+
+// - Dies
+// - ist eine
+// - Aufzählungsliste
+
+// + Und
+// + hier wird
+// + alles nummeriert.
+
+// == Abbildungen und Tabellen
+
+// Abbildungen und Tabellen (mit entsprechenden Beschriftungen) werden wie folgt erstellt.
+
+// === Abbildungen
+
+// #figure(caption: "Eine Abbildung", image(width: 4cm, "assets/ts.svg"))
+
+// === Tabellen
+
+// #figure(
+//   caption: "Eine Tabelle",
+//   table(
+//     columns: (1fr, 50%, auto),
+//     inset: 10pt,
+//     align: horizon,
+//     table.header(
+//       [],
+//       [*Area*],
+//       [*Parameters*],
+//     ),
+
+//     text("cylinder.svg"),
+//     $ pi h (D^2 - d^2) / 4 $,
+//     [
+//       $h$: height \
+//       $D$: outer radius \
+//       $d$: inner radius
+//     ],
+
+//     text("tetrahedron.svg"), $ sqrt(2) / 12 a^3 $, [$a$: edge length],
+//   ),
+// )<table>
+
+// == Programm Quellcode
+
+// Quellcode mit entsprechender Formatierung wird wie folgt eingefügt:
+
+// #figure(
+//   caption: "Ein Stück Quellcode",
+//   sourcecode[```ts
+//     const ReactComponent = () => {
+//       return (
+//         <div>
+//           <h1>Hello World</h1>
+//         </div>
+//       );
+//     };
+
+//     export default ReactComponent;
+//     ```],
+// )
+
+
+// // == Verweise
+
+// // Für Literaturverweise verwendet man die `cite`-Funktion oder die Kurzschreibweise mit dem \@-Zeichen:
+// // - `#cite(form: "prose", <iso18004>)` ergibt: \ #cite(form: "prose", <iso18004>)
+// // - Mit `@iso18004` erhält man: @iso18004
+
+// // Tabellen, Abbildungen und andere Elemente können mit einem Label in spitzen Klammern gekennzeichnet werden (die Tabelle oben hat z.B. das Label `<table>`). Sie kann dann mit `@table` referenziert werden. Das ergibt im konkreten Fall: @table
+
+// = Fazit
+
+// #lorem(50)
+
+// #lorem(120)
+
+// #lorem(80)

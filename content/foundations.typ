@@ -31,7 +31,7 @@ Today, #acr("ML") is widely applied across various fields, including supervised 
 #figure(
   image("../images/zusammenhangML&NN.png"), caption: [Machine Learning Field]
 )
-#align(center)[This image was found from @machineLearningImage.]
+#align(center)[This image was found in @machineLearningImage.]
 
 == Neural Networks
 
