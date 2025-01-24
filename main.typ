@@ -8,7 +8,7 @@
     (name: "Jeremie Bents", student-id: "1941564", course: "TINF22B2", course-of-studies: "Informatik", company: (
       (name: "SAP SE", post-code: "69190", city: "Walldorf")
     )),
-    (name: "Marvin Lindner", student-id: "kommt noch", course: "TINF22B2", course-of-studies: "Informatik", company: (
+    (name: "Marvin Lindner", student-id: "4274538", course: "TINF22B2", course-of-studies: "Informatik", company: (
       (name: "SAP SE", post-code: "69190", city: "Walldorf")
     ))
   ),

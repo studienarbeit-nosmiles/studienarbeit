@@ -1,9 +1,25 @@
-#import "@preview/acrostiche:0.2.0": acr, acrpl
+#import "@preview/acrostiche:0.3.2": acr, acrpl
+#import "@preview/note-me:0.2.1": *
 
-= Theoretical Foundations
+= Fundamentals
 - Fundamentals of Facial Recognition and Emotion Detection
 - Psychological Theories and Mechanisms of Smiling and Laughter
 - Overview of Machine Learning and Deep Learning Techniques in Visual Analysis
+
+#todo[Marvin: planned structure:
+- Theoretically we need to explain what human emotions are (emphasize on smiling)
+- Machine Learning
+- Neural Networks
+  - Convolutional Neural Networks
+    - Feature Based
+    - Image Based
+Image Processing
+- Technologies
+  - all tech used
+
+further topics that need to be covered:
+- Haar Feature
+]
 
 == History of Facial Recognition
 Facial recognition technology started in the 1960s, when early computer programs could analyze facial features by measuring the distances between key points, such as the eyes and nose. A major milestone came in the 1990s with the introduction of the “eigenfaces” approach, which used mathematical algorithms to identify unique facial characteristics automatically. This made facial recognition significantly more accurate and practical, opening doors for its use in security and surveillance. By the early 2000s, it was implemented in airports and other high-security areas, particularly for public safety.
