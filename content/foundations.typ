@@ -1,4 +1,4 @@
-#import "@preview/acrostiche:0.3.2": acr, acrpl
+#import "@preview/acrostiche:0.3.5": acr, acrpl
 #import "@preview/note-me:0.2.1": *
 
 = Fundamentals
@@ -6,7 +6,8 @@
 - Psychological Theories and Mechanisms of Smiling and Laughter
 - Overview of Machine Learning and Deep Learning Techniques in Visual Analysis
 
-#todo[Marvin: planned structure:
+#todo[
+  Marvin: planned structure:
 - Theoretically we need to explain what human emotions are (emphasize on smiling)
 - Machine Learning
 - Neural Networks
@@ -15,7 +16,6 @@
     - Image Based
 Image Processing
 - Technologies
-  - all tech used
 
 further topics that need to be covered:
 - Haar Feature
