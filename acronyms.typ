@@ -5,5 +5,7 @@
   NN: ("Neural Network", ),
   CNN: ("Convolutional Nerual Network", ),
   ML: ("Machine Learning", ),
-  AI: ("Artificial Intelligence")
+  AI: ("Artificial Intelligence"),
+  LOL: ("Last One Laughing"),
+  FER: ("Facial Expression Recognition")
 )

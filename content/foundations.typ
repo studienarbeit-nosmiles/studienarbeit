@@ -2,16 +2,16 @@
 #import "@preview/note-me:0.2.1": *
 
 = Fundamentals
-- Fundamentals of Facial Recognition and Emotion Detection
+- Fundamentals of face Recognition and Emotion Detection
 - Psychological Theories and Mechanisms of Smiling and Laughter
 - Overview of Machine Learning and Deep Learning Techniques in Visual Analysis
 
 #todo[
   Marvin: planned structure:
 - Theoretically we need to explain what human emotions are (emphasize on smiling)
-- Machine Learning
-- Neural Networks
-  - Convolutional Neural Networks
+- Machine Learning | Done
+- Neural Networks | Done
+  - Convolutional Neural Networks | Done
     - Feature Based
     - Image Based
 Image Processing
@@ -21,20 +21,32 @@ further topics that need to be covered:
 - Haar Feature
 ]
 
-== History of Facial Recognition
-Facial recognition technology started in the 1960s, when early computer programs could analyze facial features by measuring the distances between key points, such as the eyes and nose. A major milestone came in the 1990s with the introduction of the “eigenfaces” approach, which used mathematical algorithms to identify unique facial characteristics automatically. This made facial recognition significantly more accurate and practical, opening doors for its use in security and surveillance. By the early 2000s, it was implemented in airports and other high-security areas, particularly for public safety.
+== History of Face Recognition
+Face recognition technology started in the 1960s, when early computer programs could analyze face features by measuring the distances between key points, such as the eyes and nose. A major milestone came in the 1990s with the introduction of the “eigenfaces” approach, which used mathematical algorithms to identify unique face characteristics automatically. This made face recognition significantly more accurate and practical, opening doors for its use in security and surveillance. By the early 2000s, it was implemented in airports and other high-security areas, particularly for public safety.
 
-Today, facial recognition has become a common feature worldwide. In countries like China, it’s used extensively in public spaces for surveillance, shopping, and even as a payment method. In the United States, law enforcement agencies use it to identify suspects, while smartphones like iPhones and many Android devices offer face unlock features for secure access. Many airports globally also use facial recognition to streamline passport control.
+Today, face recognition has become a common feature worldwide. In countries like China, it’s used extensively in public spaces for surveillance, shopping, and even as a payment method. In the United States, law enforcement agencies use it to identify suspects, while smartphones like iPhones and many Android devices offer face unlock features for secure access. Many airports globally also use face recognition to streamline passport control.
 
-Public reactions to facial recognition are mixed. On the one hand, people appreciate its convenience for personal use and the added layer of security it provides in certain settings. However, there are significant privacy concerns. In the European Union, strict data privacy laws have slowed down its adoption for surveillance, and in the United States, several cities and states have passed legislation limiting its use. Many worry about data security, the potential for mass surveillance, and possible biases that could lead to misidentification. This ongoing debate has led to calls for more regulation to ensure that facial recognition technology is used responsibly and ethically.
+Public reactions to face recognition are mixed. On the one hand, people appreciate its convenience for personal use and the added layer of security it provides in certain settings. However, there are significant privacy concerns. In the European Union, strict data privacy laws have slowed down its adoption for surveillance, and in the United States, several cities and states have passed legislation limiting its use. Many worry about data security, the potential for mass surveillance, and possible biases that could lead to misidentification. This ongoing debate has led to calls for more regulation to ensure that face recognition technology is used responsibly and ethically.
 
-@useCasesFacial@useCasesFacial2@useCaseFacial3
+@useCasesface@useCasesface2@useCaseface3
+
+Certainly! Here is the revised text with a focus on smooth reading and scientific understanding:
+
+---
 
 == Emotion Recognition
-The automotive industry is using FER to enhance driver safety and comfort. Emotion recognition systems in vehicles can detect a driver’s mood and alertness, adjusting safety mechanisms accordingly. #linebreak()
-But also Companies use emotion detection tools to analyze consumer sentiments about products. For example, virtual try-on apps can benefit from emotion recognition by capturing the user’s response to different makeup looks or hairstyles. This feedback can help brands recommend products that customers are likely to enjoy and purchase.
+Emotions play a significant role in this thesis and need to be described in detail to understand their importance and the technology used to recognize them.
 
-For market research, emotion detection tools can be used for real-time analysis of viewer reactions to ads, allowing advertisers to optimize content for emotional engagement and tailor advertising to the viewer’s emotional state @useCaseEmotion.
+=== Emotions
+Emotions are complex psychological states characterized by physiological changes, cognitive processes, and behavioral responses. They play a pivotal role in our daily lives, influencing communication, decision-making, and social interactions. Emotions are expressed through a variety of channels, including facial expressions, body language, vocal tone, and other nonverbal signals. Scientific research has identified six universal emotions: joy, sadness, fear, anger, surprise, and disgust @whatAreEmotions. These emotions are expressed and recognized similarly across all cultures, highlighting their fundamental importance to human experience.
+
+=== Application of Emotion Recognition
+
+The automotive industry is leveraging #acr("FER") technology to enhance driver safety and comfort. Emotion recognition systems in vehicles can detect a driver's mood and alertness, thereby adjusting safety mechanisms accordingly. For instance, these systems can alert drivers if they appear drowsy or distracted, potentially preventing accidents.
+
+Companies are also utilizing emotion detection tools to analyze consumer sentiments about products. For example, virtual try-on apps can benefit from emotion recognition by capturing a user's response to different makeup looks or hairstyles. This feedback is invaluable for brands, as it allows them to recommend products that customers are likely to enjoy and purchase, thus improving customer satisfaction and sales.
+
+In the field of market research, emotion detection tools can be employed for real-time analysis of viewer reactions to advertisements. This enables advertisers to optimize content for emotional engagement and tailor advertising strategies to the viewer's emotional state. By understanding and leveraging emotional responses, advertisers can create more impactful and effective marketing campaigns. @useCaseEmotion.
 
 #pagebreak()
 == Machine Learning

@@ -16,16 +16,16 @@ whatIsCNN:
     value: 'https://www.ibm.com/topics/neural-networks', date: 2024-11-14
   }
 
-#Use Cases Facial Recognition
-useCasesFacial:
+#Use Cases face Recognition
+useCasesface:
   type: web
   title: 'Was ist ein Convolutional Neural Network?'
   author: 'Thales'
   url: {
-    value: 'https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/inspired/where-facial-recognition-used', date: 2024-11-14
+    value: 'https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/inspired/where-face-recognition-used', date: 2024-11-14
   }
 
-useCasesFacial2:
+useCasesface2:
   type: web
   title: 'Maschinelle Gesichsterkennung im öffentlichen Raum'
   author: ['Braun Binder, Nadja', 'Kunz, Eliane', 'Obrecht, Liliane']
@@ -33,21 +33,21 @@ useCasesFacial2:
     value: 'https://edoc.unibas.ch/88208/', date: 2024-11-14
   }
 
-useCaseFacial3:
+useCaseface3:
   type: web
-  title: 'Facial Recognition History'
+  title: 'face Recognition History'
   author: ['Campillo, Rafael']
   url: {
-    value: 'https://www.mobbeel.com/en/blog/facial-recognition-history/#:~:text=The%20initial%20steps%20in%20facial,RAND%20tablets%20in%20the%201960s.', date: 2024-11-14
+    value: 'https://www.mobbeel.com/en/blog/face-recognition-history/#:~:text=The%20initial%20steps%20in%20face,RAND%20tablets%20in%20the%201960s.', date: 2024-11-14
   }
 
 #Use Cases Emotion Recognition
 useCaseEmotion:
   type: web
-  title: 'Facial Recognition History'
+  title: 'face Recognition History'
   author: ['Mekinec, Dan']
   url: {
-    value: 'https://visagetechnologies.com/facial-emotion-recognition-guide/', date: 2024-11-14
+    value: 'https://visagetechnologies.com/face-emotion-recognition-guide/', date: 2024-11-14
   }
 
 #Machine Learning
@@ -66,3 +66,15 @@ machineLearningImage:
   url: {
     value: 'https://ictinstitute.nl/ai-machine-learning-and-neural-networks-explained/', date: 2024-11-14
   }
+
+whatAreEmotions:
+    type: Article
+    title: Facial expression and emotion
+    author: ["Ekman, Paul"]
+    serial-number:
+        doi: "10.1037/0003-066X.48.4.384"
+    page-range: 384-392
+    date: 1993
+    journal: American Psychologist
+    volume: 48
+    issue: 4
