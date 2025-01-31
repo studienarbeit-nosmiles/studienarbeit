@@ -1,1 +1,3 @@
-*.pdf
+content/*/*.pdf
+content/*.pdf
+preview.pdf
