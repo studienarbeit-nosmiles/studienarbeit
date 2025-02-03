@@ -22,7 +22,7 @@ useCasesface:
   title: 'Was ist ein Convolutional Neural Network?'
   author: 'Thales'
   url: {
-    value: 'https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/inspired/where-face-recognition-used', date: 2024-11-14
+    value: 'https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/inspired/where-facial-recognition-used', date: 2024-11-14
   }
 
 useCasesface2:
@@ -35,19 +35,19 @@ useCasesface2:
 
 useCaseface3:
   type: web
-  title: 'face Recognition History'
+  title: 'Facial Recognition History'
   author: ['Campillo, Rafael']
   url: {
-    value: 'https://www.mobbeel.com/en/blog/face-recognition-history/#:~:text=The%20initial%20steps%20in%20face,RAND%20tablets%20in%20the%201960s.', date: 2024-11-14
+    value: 'https://www.mobbeel.com/en/blog/facial-recognition-history/#:~:text=The%20initial%20steps%20in%20facial,RAND%20tablets%20in%20the%201960s.', date: 2024-11-14
   }
 
 #Use Cases Emotion Recognition
 useCaseEmotion:
   type: web
-  title: 'face Recognition History'
+  title: 'Facial Recognition History'
   author: ['Mekinec, Dan']
   url: {
-    value: 'https://visagetechnologies.com/face-emotion-recognition-guide/', date: 2024-11-14
+    value: 'https://visagetechnologies.com/facial-emotion-recognition-guide/', date: 2024-11-14
   }
 
 #Machine Learning
