@@ -78,3 +78,26 @@ whatAreEmotions:
     journal: American Psychologist
     volume: 48
     issue: 4
+
+GarciaHernandez2024:
+  type: Article
+  author:
+    - García-Hernández, Rosa A.
+    - Luna-García, Huizilopoztli
+    - Celaya-Padilla, José M.
+    - García-Hernández, Alejandra
+    - Reveles-Gómez, Luis C.
+    - Flores-Chaires, Luis Alberto
+    - Delgado-Contreras, J. Ruben
+    - Rondon, David
+    - Villalba-Condori, Klinge O.
+  journal: Applied Sciences
+  title: A Systematic Literature Review of Modalities, Trends, and Limitations in Emotion Recognition, Affective Computing, and Sentiment Analysis
+  year: 2024
+  issn: 2076-3417
+  month: August
+  number: 16
+  pages: 7165
+  volume: 14
+  doi: 10.3390/app14167165
+  publisher: MDPI AG

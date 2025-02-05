@@ -73,13 +73,21 @@ Es finden nach Bedarf Absprachen mit unserem Betreuer statt, um ihn stets auf de
 = Introduction
 
 == Motivation
-The primary motivation behind this study is to develop a robust software system capable of automatically detecting smiling and laughing faces. The project is inspired by the popular series #acr("LOL"), where the ability to monitor and analyze face expressions in real-time can significantly enhance the viewing experience. This study aims to leverage advanced face recognition and emotion detection technologies to create a service that can accurately identify and respond to face expressions. The literature review will cover existing methods and technologies in face recognition and emotion detection, highlighting the advancements and challenges in the field. The scope of this study includes the development, implementation, and evaluation of the proposed system.
+The primary motivation behind this study is to develop a robust software system capable of automatically detecting smiling and laughing faces. 
+The project is inspired by the popular series #acr("LOL"), where the ability to monitor and analyze face expressions in real-time can significantly enhance the viewing experience. 
+This study aims to leverage advanced face recognition and emotion detection technologies to create a service that can accurately identify and respond to face expressions. 
+The literature review will cover existing methods and technologies in face recognition and emotion detection, highlighting the advancements and challenges in the field. 
+The scope of this study includes the development, implementation, and evaluation of the proposed system.
 
 == Problem
-The current state of face recognition and emotion detection technologies presents several challenges and limitations. While there have been significant advancements, existing systems often struggle with accuracy and real-time performance, especially in dynamic environments. The primary problem addressed in this study is the need for a reliable and efficient system that can detect smiling and laughing faces in real-time with high accuracy. The gap identified is the lack of a specialized solution tailored for the specific requirements of the #acr("LOL") series, including real-time monitoring, immediate response, and high reliability. This study aims to bridge this gap by developing a system that meets these specific needs.
+The current state of face recognition and emotion detection technologies presents several challenges and limitations. 
+While there have been significant advancements, existing systems often struggle with accuracy and real-time performance, especially in dynamic environments. 
+The primary problem addressed in this study is the need for a reliable and efficient system that can detect smiling and laughing faces in real-time with high accuracy. @GarciaHernandez2024 
+The gap identified is the lack of a specialized solution tailored for the specific requirements of the #acr("LOL") series, including real-time monitoring, immediate response, and high reliability. 
+This study aims to bridge this gap by developing a system that meets these specific needs.
 
-// Eigentlich müsste man hier schon ein oder ein paar papers zitieren und die Forschungslücke genauer beschreiben. 
-//! TODO: Suche paper für problem 
+#todo[Schätzle fragen wie er Quellen für einzelne Aussagen haben will.]
+#todo[Problem: Grund für unsere Lösung (LOL) ist nicht fundiert. Keine Quelle dafür]
 
 == Research Framework and Objectives
 The importance of this research lies in its potential to enhance the viewing experience of the #acr("LOL") series by providing a reliable and efficient face expression detection system. The research problem is to develop a system that can accurately detect smiling and laughing faces in real-time. The research aims and objectives include:
@@ -99,9 +107,9 @@ The hypotheses of this study are:
 The methodology includes the development of the system using Python, leveraging existing libraries and frameworks for face recognition and emotion detection. The study will also involve extensive testing and evaluation to ensure the system meets the defined requirements.
 
 == Thesis Structure
-The order of information in this thesis will follow a structured approach:
+The order of chapter in this thesis will follow a structured approach:
 1. *Introduction*: Provides the motivation, problem statement, and research objectives.
-2. *Literature Review*: Reviews existing methods and technologies in face recognition and emotion detection.
+2. *Fundamentals*: Reviews existing methods and technologies in face recognition and emotion detection.
 3. *Methodology*: Details the development process, tools, and techniques used.
 4. *Implementation*: Describes the implementation of the face recognition and emotion detection modules.
 5. *Testing and Evaluation*: Presents the testing procedures, results, and evaluation of the system's performance.
