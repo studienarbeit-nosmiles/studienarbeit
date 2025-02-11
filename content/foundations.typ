@@ -7,7 +7,6 @@
 - Overview of Machine Learning and Deep Learning Techniques in Visual Analysis
 
 #todo[
-  Marvin: planned structure:
 - Theoretically we need to explain what human emotions are (emphasize on smiling)
 - Machine Learning | Done
 - Neural Networks | Done
@@ -31,8 +30,8 @@ Public reactions to face recognition are mixed. On the one hand, people apprecia
 @useCasesface@useCasesface2@useCaseface3
 
 #todo[
-  Revise due to poor source quality and lack of references.
-  Also maybe move this to another spot
+  Wissenschaftliche Quellen raussuchen. Struktur passt mit dem Aufbau von Face Recognition auf Emotion Recognition.
+  Der rote Faden fehlt zwischen den einzelnen Kapiteln
 ]
 
 == Emotion Recognition
@@ -41,7 +40,7 @@ Emotions play a significant role in this thesis and need to be described in deta
 === Emotions
 Emotions are complex psychological states characterized by physiological changes, cognitive processes, and behavioral responses. They play a pivotal role in our daily lives, influencing communication, decision-making, and social interactions. Emotions are expressed through a variety of channels, including facial expressions, body language, vocal tone, and other nonverbal signals. Scientific research has identified six universal emotions: joy, sadness, fear, anger, surprise, and disgust @whatAreEmotions. These emotions are expressed and recognized similarly across all cultures, highlighting their fundamental importance to human experience.
 
-=== Application of Emotion Recognition
+=== History of Emotion Recognition
 
 The automotive industry is leveraging #acr("FER") technology to enhance driver safety and comfort. Emotion recognition systems in vehicles can detect a driver's mood and alertness, thereby adjusting safety mechanisms accordingly. For instance, these systems can alert drivers if they appear drowsy or distracted, potentially preventing accidents.
 

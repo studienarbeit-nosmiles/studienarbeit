@@ -19,7 +19,7 @@ whatIsCNN:
 #Use Cases face Recognition
 useCasesface:
   type: web
-  title: 'Was ist ein Convolutional Neural Network?'
+  title: 'Where is facial recognition used?'
   author: 'Thales'
   url: {
     value: 'https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/inspired/where-facial-recognition-used', date: 2024-11-14

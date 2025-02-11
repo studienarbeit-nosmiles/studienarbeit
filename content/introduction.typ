@@ -86,7 +86,6 @@ The primary problem addressed in this study is the need for a reliable and effic
 The gap identified is the lack of a specialized solution tailored for the specific requirements of the #acr("LOL") series, including real-time monitoring, immediate response, and high reliability. 
 This study aims to bridge this gap by developing a system that meets these specific needs.
 
-#todo[Schätzle fragen wie er Quellen für einzelne Aussagen haben will.]
 #todo[Problem: Grund für unsere Lösung (LOL) ist nicht fundiert. Keine Quelle dafür]
 
 == Research Framework and Objectives
