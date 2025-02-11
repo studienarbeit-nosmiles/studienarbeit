@@ -1,9 +1,9 @@
-#import "@preview/clean-dhbw:0.1.0": *
+#import "@preview/clean-dhbw:0.1.1": *
 #import "acronyms.typ": acronyms
 #import "glossary.typ": glossary
 
 #show: clean-dhbw.with(
-  title: "Implementation on a smile tracking AI model ",
+  title: "Improving Performance in Real-Time Emotion Recognition",
   authors: (
     (name: "Jeremie Bents", student-id: "1941564", course: "TINF22B2", course-of-studies: "Informatik"),
     (name: "Marvin Lindner", student-id: "4274538", course: "TINF22B2", course-of-studies: "Informatik")
