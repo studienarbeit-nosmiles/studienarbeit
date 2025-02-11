@@ -30,9 +30,10 @@ Public reactions to face recognition are mixed. On the one hand, people apprecia
 
 @useCasesface@useCasesface2@useCaseface3
 
-Certainly! Here is the revised text with a focus on smooth reading and scientific understanding:
-
----
+#todo[
+  Revise due to poor source quality and lack of references.
+  Also maybe move this to another spot
+]
 
 == Emotion Recognition
 Emotions play a significant role in this thesis and need to be described in detail to understand their importance and the technology used to recognize them.
