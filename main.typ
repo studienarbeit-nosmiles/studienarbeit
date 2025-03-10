@@ -1,4 +1,4 @@
-#import "@preview/clean-dhbw:0.1.1": *
+#import "@preview/clean-dhbw:0.2.1": *
 #import "acronyms.typ": acronyms
 #import "glossary.typ": glossary
 
@@ -12,7 +12,7 @@
   acronyms: acronyms, // displays the acronyms defined in the acronyms dictionary
   at-university: true, // if true the company name on the title page and the confidentiality statement are hidden
   city: "Karlsruhe",
-  bibliography: bibliography("bib.yaml"),
+  bibliography: bibliography("literature.bib"),
   date: datetime.today(),
   glossary: glossary, // displays the glossary terms defined in the glossary dictionary
   language: "en", // en, de

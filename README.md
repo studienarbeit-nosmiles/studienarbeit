@@ -4,8 +4,6 @@
 Teilnehmer: Schätzle, Roland; Bents, Jeremie; Lindner, Marvin <br>
 Thema: Besprechung der Dokumentation und allgemeine Koordinierung
 
-- Titel
-  - Änderung des Titels und Bearbeitung der Themenabgabe in Moodle, da die Arbeit jetzt in englisch geschrieben wird.
 - Einleitung
   - Anwendungsbereiche darstellen für unsere "Lösung"
   - Research Framework: Research oder Implementierung
