@@ -7,5 +7,7 @@
   ML: ("Machine Learning", ),
   AI: ("Artificial Intelligence"),
   LOL: ("Last One Laughing"),
-  FER: ("Facial Expression Recognition")
+  FER: ("Facial Expression Recognition"),
+  ADALINE: ("Adaptive Linear Element"),
+  MADALINE: ("Many ADALINE"),
 )

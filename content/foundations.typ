@@ -1,5 +1,6 @@
 #import "@preview/acrostiche:0.3.5": acr, acrpl
 #import "@preview/note-me:0.2.1": *
+#import "@preview/glossarium:0.5.4": gls
 
 // TODO: Echtzeit Arten müssen definiert werden
 
@@ -108,42 +109,41 @@
 // ]
 
 == Neural Networks
-Neural networks are a type of machine learning algorithm inspired by the structure and function of the human brain. 
+#acr("NN") are a type of #acr("ML") algorithm inspired by the structure and function of the human brain. 
 They are composed of interconnected nodes, or "neurons," organized in layers. 
 These networks are designed to recognize patterns in data and learn from experience, making them capable of performing complex tasks such as image recognition, natural language processing, and decision-making.
 
 === History of Neural Networks
-Neural networks have come a long way since their inception in the 1940s. 
+Neural networks have come a long way since their origin in the 1940s.
 Here is a brief overview of their evolution over the decades.
 
 ==== 1940s to 1970s
 
-The birth of neural networks can be traced back to 1943 when neurophysiologist Warren McCulloch and mathematician Walter Pitts published their groundbreaking paper on how neurons might function. 
-They proposed a simple model of neural networks using electrical circuits, laying the foundation for future research in the field. @McCulloch1943
+The birth of #acr("NN") can be traced back to 1943 when Warren McCulloch and Walter Pitts published their groundbreaking paper on how neurons might function. 
+They proposed a simple model of #acrpl("NN") using electrical circuits, laying the foundation for future research in the field. @McCulloch1943
 
 In 1949, Donald Hebb's seminal work, "The Organization of Behavior," introduced the concept of neural plasticity. 
 Hebb proposed that neural pathways are strengthened through repeated use, a principle now known as Hebbian learning. 
-This concept became fundamental to our understanding of how humans learn and would later influence the development of artificial neural networks. @Hebb2005
+This concept became fundamental to our understanding of how humans learn and would later influence the development of artificial #acr("NN"). @Hebb2005
 
-The Dartmouth Conference in 1956, officially known as the Dartmouth Summer Research Project on Artificial Intelligence, is considered the founding event of the field of artificial intelligence (AI). 
+The Dartmouth Conference in 1956, officially known as the Dartmouth Summer Research Project on Artificial Intelligence, is considered the founding event of the field of #acr("AI"). 
 Organized by John McCarthy and others, it aimed to explore the potential for machines to simulate human intelligence through collaborative brainstorming among leading researchers @Mccarthy2006
 
-A significant breakthrough came in 1959 when Bernard Widrow and Marcian Hoff of Stanford University developed the ADALINE (Adaptive Linear Element) and MADALINE (Multiple ADALINE) models. 
-ADALINE was designed to recognize binary patterns, while MADALINE became the first neural network applied to a real-world problem: eliminating echoes on phone lines @Graupe2018
+A significant breakthrough came in 1959 when Bernard Widrow and Marcian Hoff of Stanford University developed the #acr("ADALINE") and #acr("MADALINE") models. 
+#acr("ADALINE") was designed to recognize binary patterns, while #acr("MADALINE") became the first #acr("NN") applied to a real-world problem: eliminating echoes on phone lines @Graupe2018
 
 In 1962, Widrow and Hoff introduced a learning procedure that would later influence the development of backpropagation algorithms. 
 Their method examined the value before adjusting the weight, distributing the error across the network. 
-This approach was a significant step towards creating more efficient learning algorithms for neural networks. @Graupe2018
+This approach was a significant step towards creating more efficient learning algorithms for #acr("NN"). @Graupe2018
 
-Despite these advancements, the field of neural networks faced a setback in the late 1960s and early 1970s. 
+Despite these advancements, the field of #acrpl("NN") faced a setback in the late 1960s and early 1970s. 
 The rise of traditional von Neumann architecture in computing overshadowed neural network research. Additionally, a paper suggesting the impossibility of extending single-layered networks to multiple layers further dampened enthusiasm in the field. 
 Coupled with unfulfilled promises and philosophical concerns about "thinking machines," funding and research in neural networks declined significantly during this period. @Graupe2018
 
 However, the field was not entirely dormant. 
 In 1972, Teuvo Kohonen and James Anderson independently developed similar networks that would later contribute to the resurgence of interest in neural networks. 
 In 1975, the first multilayered network was developed, albeit an unsupervised one.
-
-#todo[source?]
+@Anderson2000
 
 ==== 1980s to Present
 
@@ -155,20 +155,18 @@ This breakthrough allowed for the training of multi-layer networks, greatly expa
 
 The 1990s and 2000s saw an explosion of research and practical applications of neural networks. 
 They began to be used in various fields, including pattern recognition, financial forecasting, and medical diagnosis. 
-The advent of more powerful computing hardware and the availability of large datasets further accelerated progress in the field. @2000
+The advent of more powerful computing hardware and the availability of large datasets further accelerated progress in the field. @Anderson2000
 
 In recent years, deep learning, a subset of neural networks with many layers, has revolutionized artificial intelligence. 
-Breakthroughs in areas such as image and speech recognition, natural language processing, and game-playing AI (like AlphaGo) have been achieved using deep neural networks. @2000
+Breakthroughs in areas such as image and speech recognition, natural language processing, and game-playing AI (like AlphaGo) have been achieved using deep neural networks. @Anderson2000
 
 
 Current research focuses on developing more efficient hardware for neural network computation, including specialized chips and optical computing. 
-The goal is to create faster, more energy-efficient neural networks capable of learning and adapting in real-time. @2000
+The goal is to create faster, more energy-efficient neural networks capable of learning and adapting in real-time. @Anderson2000
 
 == Convolutional Neural Networks
-Convolutional Neural Networks (CNNs) are a specialized type of deep neural network that are particularly effective for processing data with a grid-like topology, such as images, videos, and time-series data. @Thoma2017
+Convolutional Neural Networks (CNNs) are a specialized type of deep neural network that are particularly effective for processing data with a grid-like topology, such as images, videos, and time-series data. @Ranjith2019
 
 === Convolution
-
-
 
 === History
