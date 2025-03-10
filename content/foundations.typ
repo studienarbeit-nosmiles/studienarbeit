@@ -147,7 +147,9 @@ In 1975, the first multilayered network was developed, albeit an unsupervised on
 
 ==== 1980s to Present
 
-The 1980s marked a renaissance for neural networks. In 1982, John Hopfield's presentation to the National Academy of Sciences introduced the concept of bidirectional connections in neural networks, sparking renewed interest in the field. The same year, Reilly and Cooper developed a "Hybrid network" with multiple layers, each employing different problem-solving strategies.
+The 1980s marked a renaissance for neural networks. 
+In 1982, John Hopfield's presentation to the National Academy of Sciences introduced the concept of bidirectional connections in neural networks, sparking renewed interest in the field. 
+The same year, Reilly and Cooper developed a "Hybrid network" with multiple layers, each employing different problem-solving strategies.
 @Graupe2018
 
 A pivotal moment came in 1986 when multiple research groups, including one led by David Rumelhart, independently developed the backpropagation algorithm. 
@@ -164,9 +166,144 @@ Breakthroughs in areas such as image and speech recognition, natural language pr
 Current research focuses on developing more efficient hardware for neural network computation, including specialized chips and optical computing. 
 The goal is to create faster, more energy-efficient neural networks capable of learning and adapting in real-time. @Anderson2000
 
+#pagebreak()
 == Convolutional Neural Networks
-Convolutional Neural Networks (CNNs) are a specialized type of deep neural network that are particularly effective for processing data with a grid-like topology, such as images, videos, and time-series data. @Ranjith2019
+Convolutional Neural Networks (CNNs) are a specialized type of deep neural network that are particularly effective for processing data with a grid-like topology, such as images, videos, and time-series data. 
 
 === Convolution
 
+Convolution serves is important in various fields, e.g. image processing. 
+It elegantly combines two functions, revealing how the shape of one is modified by the other. 
+Understanding its principles is crucial for comprehending the mechanisms underlying many data processing techniques, including those employed in neural networks.  @Goodfellow-et-al-2016
+
+At its core, convolution involves a dynamic interaction between two functions: an input signal, representing the data to be processed, and a kernel, a function acting as a filter or feature detector. 
+This interaction can be visualized as a "sliding" operation. 
+The kernel is first "flipped" or reflected about its origin, then systematically shifted across the input signal. 
+At each position, a point-wise multiplication occurs between the kernel's values and the corresponding values of the input signal. 
+These products are then summed, yielding a single output value. 
+This process is repeated as the kernel slides across the entire input, generating the output signal. @Goodfellow-et-al-2016
+
+Intuitively, convolution can be interpreted as a form of weighted averaging. 
+The kernel acts as a set of weights, emphasizing or suppressing specific features in the input. 
+For instance, a kernel with uniform weights smooths the input, reducing noise. Conversely, a kernel with sharp transitions highlights edges or abrupt changes. @Goodfellow-et-al-2016
+
+In image processing, convolution is instrumental for tasks such as blurring, sharpening, and edge detection. 
+By applying different kernels, one can extract various features from an image. 
+A kernel with a Gaussian distribution blurs the image, while a kernel designed to detect intensity gradients identifies edges. 
+This ability to extract features is fundamental to Convolutional Neural Networks (CNNs), where convolution layers learn to automatically extract relevant features from input images. @Goodfellow-et-al-2016
+
 === History
+
+The beginnings of #acr("CNN") start in the late 1950s and early 1960s with the work of Hubel and Wiesel, who studied the visual cortex of cats. 
+Their research revealed that neurons in the visual cortex respond to specific patterns of light and dark, organized in a hierarchical manner. 
+This discovery inspired the concept of receptive fields, where neurons respond to local regions of the input, laying the foundation for the convolutional operation. @Goodfellow-et-al-2016
+
+In the 1980s, Kunihiko Fukushima introduced the Neocognitron, a hierarchical, multi-layered neural network designed to recognize handwritten characters. 
+The Neocognitron incorporated concepts such as local receptive fields and weight sharing, which are fundamental to modern CNNs. 
+However, due to computational limitations and the lack of effective training algorithms, the Neocognitron did not achieve widespread adoption. @Fukushima1983
+
+A significant leap forward occurred in the late 1980s and early 1990s with the work of Yann LeCun and his colleagues at Bell Labs. 
+They developed LeNet, a CNN architecture designed for handwritten digit recognition. 
+LeNet demonstrated the effectiveness of backpropagation for training CNNs and showcased their ability to learn hierarchical representations of visual data. 
+LeNet's success in recognizing handwritten digits for postal code recognition highlighted the practical potential of CNNs. @Goodfellow-et-al-2016
+
+Despite LeNet's advancements, CNNs remained relatively niche for several years. 
+The lack of powerful computing hardware and large datasets hindered their application to more complex tasks. 
+However, the early 2000s witnessed a confluence of factors that catalyzed a resurgence in CNN research. 
+The availability of powerful GPUs and the emergence of large-scale image datasets, such as ImageNet, provided the necessary resources for training deeper and more complex CNN architectures. @Goodfellow-et-al-2016
+
+The watershed moment arrived in 2012 with the ImageNet Large Scale Visual Recognition Challenge (ILSVRC). 
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton introduced AlexNet, a deep CNN that achieved a groundbreaking performance, significantly outperforming traditional machine learning methods. 
+AlexNet's success demonstrated the power of deep CNNs for large-scale image recognition and ignited the modern deep learning revolution. @Krizhevsky2017
+
+Following AlexNet, numerous advancements further enhanced CNN architectures. 
+VGGNet introduced deeper networks with smaller convolutional filters, demonstrating the benefits of increased depth. 
+GoogLeNet and Inception architectures incorporated inception modules to capture features at multiple scales. 
+ResNet introduced residual connections, enabling the training of extremely deep networks. @Goodfellow-et-al-2016
+
+Beyond image recognition, CNNs have found applications in diverse fields, including natural language processing, speech recognition, and medical image analysis. 
+Their ability to learn hierarchical representations and extract relevant features from complex data has made them a cornerstone of modern artificial intelligence. @Goodfellow-et-al-2016
+
+#pagebreak()
+
+#todo[add source from here on out]
+
+=== Face Recognition
+Face recognition technology allows computers to identify people from images or videos. 
+This chapter explores how this technology developed, from early attempts to modern systems using advanced computer learning.
+
+==== History
+
+#heading(outlined: false, depth: 5, numbering: none)[Early Research]
+Before deep learning, face recognition relied on various techniques that, while pioneering, faced significant limitations. 
+Early methods focused on extracting geometric features or comparing pixel patterns directly. One prominent approach was the use of eigenfaces. 
+This technique, developed in the early 1990s, employed Principal Component Analysis (PCA) to reduce the dimensionality of face images, representing faces as linear combinations of eigenvectors. 
+While effective under controlled lighting and pose conditions, eigenfaces struggled with variations in illumination, head orientation, and facial expressions.
+
+Another early strategy involved geometric feature-based methods. These techniques aimed to measure distances and ratios between facial landmarks, such as the eyes, nose, and mouth. 
+By comparing these measurements, systems could attempt to identify individuals. 
+However, the accuracy of these methods was highly dependent on precise landmark detection and was also vulnerable to variations in pose and expression.
+
+Template matching was also employed, where a stored image of a face was directly compared to an input image. 
+These methods were computationally simple but extremely sensitive to changes in lighting, pose, and scale.
+These early attempts, while laying the groundwork for future advancements, highlighted the need for more robust and adaptable techniques capable of handling real-world variations.
+
+#heading(outlined: false, depth: 5, numbering: none)[Impact]
+The emergence of Convolutional Neural Networks (CNNs) revolutionized face recognition. 
+CNNs' ability to automatically learn hierarchical features from raw pixel data significantly improved accuracy and robustness. 
+Key architectures like DeepFace (Facebook) demonstrated the power of deep learning in achieving near-human-level face recognition performance. 
+DeepFace utilized a deep neural network with multiple layers to learn complex representations of faces, achieving a breakthrough in accuracy on benchmark datasets.
+
+FaceNet (Google) introduced the concept of embedding faces into a high-dimensional space where similar faces are close together. 
+It used a triplet loss function, which trained the network to distinguish between different individuals while ensuring that faces of the same person were tightly clustered. 
+This approach provided a highly efficient and accurate method for face verification and identification.
+
+DeepID (Chinese University of Hong Kong) focused on learning discriminative features for face identification. 
+It demonstrated the effectiveness of training deep networks with large-scale datasets and advanced loss functions, leading to significant improvements in face recognition accuracy.
+
+CNNs addressed many of the limitations of earlier methods. 
+They could handle variations in pose, lighting, and occlusion through their learned feature representations. 
+Data augmentation techniques further enhanced the robustness of these models by exposing them to a wide range of input variations during training.
+
+#heading(outlined: false, depth: 5, numbering: none)[Modern Face Recognition]
+Modern face recognition systems leverage vast datasets like MS-Celeb-1M and VGGFace2, enabling the training of highly accurate models. 
+Advanced loss functions, such as ArcFace and CosFace, have been developed to further improve discriminative power by maximizing inter-class variance and minimizing intra-class variance.
+
+Applications of face recognition have expanded significantly, including security systems, access control, social media tagging, personalized experiences, and law enforcement. 
+However, the widespread use of face recognition has raised significant ethical concerns. 
+Issues such as privacy violations, potential for misuse, and algorithmic bias have prompted calls for regulations and responsible development practices.
+
+#pagebreak()
+=== Facial Expresson Recognition
+Facial expression recognition, or #acr("FER"), enables computers to understand emotions by analyzing facial expressions. 
+This chapter explains the history of #acr("FER"), from basic emotion studies to the use of powerful computer programs.
+
+==== History
+
+#heading(outlined: false, depth: 5, numbering: none)[Early Research]
+The foundation of emotional recognition research was laid by the pioneering work of Paul Ekman, who identified six basic emotions universally expressed through facial expressions: happiness, sadness, anger, fear, surprise, and disgust.
+
+Early attempts at automated #acr("FER") relied on the Facial Action Coding System (FACS). 
+FACS, developed by Ekman and Friesen, provides a comprehensive system for coding facial muscle movements. 
+Researchers used FACS to analyze facial expressions and develop rule-based systems for emotion classification. 
+These systems relied on predefined rules that mapped specific AU combinations to emotional states.
+
+However, rule-based systems were limited by their reliance on manual feature extraction and their inability to handle subtle variations in expressions. 
+They also struggled with the complexity of real-world scenarios, where expressions are often nuanced and context-dependent.
+
+#heading(outlined: false, depth: 5, numbering: none)[CNNs and FER]
+The application of CNNs to #acr("FER") has significantly improved accuracy and robustness. 
+CNNs can automatically learn relevant features from facial images, eliminating the need for manual feature extraction. 
+Deep learning models have demonstrated superior performance in recognizing a wide range of emotions, including subtle and compound expressions.
+
+Data augmentation plays a crucial role in training effective #acr("FER") models. 
+Techniques such as random cropping, flipping, and rotation are used to increase the diversity of training data and improve the model's ability to generalize. 
+Due to the relative scarcity of labeled emotional data, data augmentation is extremely important in this field.
+
+For video-based #acr("FER"), temporal information is crucial. 
+Recurrent Neural Networks (RNNs) and 3D CNNs are used to capture the temporal dynamics of facial expressions. 
+RNNs can model the sequential nature of expressions, while 3D CNNs can extract spatio-temporal features directly from video frames.
+
+Despite advancements, #acr("FER") still faces challenges. 
+Subtle expressions, cultural differences in expression, dataset bias, and the need to incorporate contextual information remain active areas of research. 
+Ethical concerns regarding the potential for misinterpretation and misuse of #acr("FER") technology have also emerged, emphasizing the need for responsible development and deployment.
